@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 
 const Signup = (props) => {
-    const host = "http://localhost:5000";
+    const host = "https://inote.herokuapp.com";
     const [credentials, setCredentials] = useState({ name: "", email: "", password: "", cpassword: "" });
     let navigate = useNavigate();
 
