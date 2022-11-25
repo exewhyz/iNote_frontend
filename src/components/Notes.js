@@ -9,8 +9,10 @@ const Notes = (props) => {
     const [note, setNote] = useState({ id: "", etitle: "", edescription: "", etag: "" });
     const ref = useRef(null)
     const refClose = useRef(null)
+
     const context = useContext(notecontext);
     const { notes, getNotes, editNote } = context;
+    
     useEffect(() => {
         if (localStorage.getItem('token')) {
             getNotes();
